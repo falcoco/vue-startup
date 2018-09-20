@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@0.12.0/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.13.1/lodash.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        {{ message }}
+        <p></p>
+        <div v-if="seen">This is a hidden string.</div>
+        <button v-on:click="handle">Click</button>
+    </div>
+
+    <div id="app-1">
+        <span v-bind:title="message">Pause here!</span>
+    </div>
+
+    <div id="app-2">
+        <li v-for="(item, index) in items" :key="index">
+            {{ item.text }}
+        </li>
+    </div>
+
+    <div id="app-3">
+        <input v-model="message" type="text" >
+        {{ message }}
+    </div>
+
+    <div id="app-4">
+        <ol>
+            <todo-item v-for="item in todos" :key="item.id" :todo="item">
+            </todo-item>
+        </ol>
+    </div>
+
+    <div id="app-5">
+        <li v-for="item in nums">
+            {{ item }}
+        </li>
+        <br>
+        <li v-for="item in midifiedData">
+                {{ item }}
+            </li>
+    </div>
+
+    <div id="axios-example">
+        <p>
+            Ask a yes/no question.
+            <input v-model="question" type="text">
+        </p>
+        <p>
+            {{ answer }}
+        </p>
+    </div>
+
+
+    <script src="./index.js"></script>
+</body>
+</html>
