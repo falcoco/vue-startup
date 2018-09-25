@@ -134,6 +134,7 @@ var container = new Vue({
             obj.id = this.index
             obj.text = this.fakeInput
             this.todos.push(obj)
+            this.fakeInput = ''
         }
     }
 })

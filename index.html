@@ -14,12 +14,11 @@
 <div id="container">
     <div id="fakebox">
         <input id="fakeInput" type="text" alt="Add todo here" v-model="fakeInput">
-        <button id="fakeButton" v-on:click="addTodo">Add</button>
+        <button id="fakeButton" @click="addTodo">Add</button>
     </div>
     <div id="results">
         <ol>
             <todo-item v-for=" item in todos" :key="item.id" :todo="item">
-
             </todo-item>
         </ol>
     </div>

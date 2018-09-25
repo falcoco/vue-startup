@@ -8,13 +8,13 @@ body{
 #container{
     height: auto;
     width: auto;
-    margin-left: 500px;
-    margin-top: 200px;
 }
 
 #fakebox{
     width: 500px;
     height: 50px;
+    margin-left: auto;
+    margin-right: auto;
 }
 #fakeInput{
     width: 400px;
@@ -29,11 +29,4 @@ body{
     padding: 0px;
     margin: 0px;
 }
-/*#app{*/
-     /*border: solid medium black;*/
-     /*border-width: 1px;*/
-     /*margin: 20px;*/
-     /*padding: 2px;*/
-     /*background-color: lightgreen;*/
- /*}*/
 
