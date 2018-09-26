@@ -7,7 +7,9 @@ body{
 
 #container{
     height: auto;
-    width: auto;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #fakebox{
@@ -15,6 +17,7 @@ body{
     height: 50px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 10%;
 }
 #fakeInput{
     width: 400px;
@@ -28,5 +31,9 @@ body{
     height: 30px;
     padding: 0px;
     margin: 0px;
+}
+#results{
+    margin-left: auto;
+    margin-right: auto;
 }
 
